@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ADD ITEM</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+                    
+<body style="background-color: ">
+<div class="container mt-5" >
+        <div class="row justify-content-center" >
+            <div class="col-xl-6 col-lg-7 col-md-10 border rounded my-5 p-4  mx-3" style="background-color:">
+                <h3 class="text-center mt-2 mb-3">ADD ITEM</h3>
+                <form method="post" action="addPhongban.php" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Name of item</label>
+                        <input value="" name="name" required class="form-control" type="text" id="name" placeholder="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input value="" name="price" required class="form-control" type="number" id="price">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Sale">Sale (%)</label>
+                        <input id="sale" name="sale" class="form-control" required type="number"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="describe">Describe</label>
+                        <textarea id="describe" rows="4" name="describe" class="form-control" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">ReleaseDate</label>
+                        <input id="date" name="date" class="form-control" required type="date"></input>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="img">Image file</label>
+                        <input type="file" name="img" id="img">
+                    </div>
+                    
+
+                    <div class="row justify-content-end">
+                        <button type="submit" class="btn btn-success px-5 mr-3">Thêm</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
